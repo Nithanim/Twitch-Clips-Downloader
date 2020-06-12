@@ -96,6 +96,7 @@ for Range in Range_List:
             if r.json()[0]['errors'][0]['message'] == "service timeout":
                 print("[TIMEOUT] Received rate-limit, waiting 5 seconds...")
                 sleep(5)
+    doneParsing = False
 if len(Range_List) > 1:
     print("[SUCCESS] Reached clips limit, maximum amount of clips retrieved")
 else:
